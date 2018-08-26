@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <title>Order Up!!</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/orders.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.prepared').children('li').children('.change-order').attr('style', 'display: none')
+            $('.prepared').children('li').children('.delete-order').attr('style', 'display: none')
+            $('.served').children('li').children('.deliver-order').attr('style', 'display: none')
+        });
+
+    </script>
+</head>
+
+<body>
+    {{!--
+    <div class="jumbotron"> --}}
+        <div class="row" style="overflow:hidden">
+            <img class="col-md-6 mx-0" src="/assets/images/prep1.png" alt="food prep">
+            <img class="col-md-6 mx-0" src="/assets/images/eating1.png" alt="eating food">
+        </div>
+        {{!--
+    </div> --}} {{{ body }}}
+</body>
+
+</html>

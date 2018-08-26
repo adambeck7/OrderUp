@@ -1,0 +1,16 @@
+<li class="col-md-12 list-group-item row text-center">
+
+    <div>
+        {{order_name}}
+    </div>
+
+    <button class="deliver-order col-md-6 btn btn-warning" data-id="{{id}}" data-neworder_ready="true">
+        {{#if order_ready}}Take order to table {{id}}!{{/if}}
+    </button>
+
+    <button class="change-order col-md-5 btn btn-danger mt-1" data-id="{{id}}" data-neworder_ready="false">
+        {{#unless order_ready}}Gross! Send it back!!{{/unless}}
+    </button>
+
+    <button class="delete-order col-md-5 btn btn-success mt-1" data-id="{{id}}" data-neworder_ready="false">Devour it!</button>
+</li>

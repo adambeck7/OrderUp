@@ -7,7 +7,7 @@ CREATE TABLE orders
     AUTO_INCREMENT,
 	order_name varchar
     (255) NOT NULL,
-	order_ready BOOLEAN DEFAULT false,
+	order_ready BOOLEAN DEFAULT false NOT NULL,
 	PRIMARY KEY
     (id)
 );
