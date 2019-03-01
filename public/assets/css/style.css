@@ -3,9 +3,10 @@
 } */
 
 img {
-    background-size: cover;
-    /* max-height: 300px; */
-    -ms-background-position-x: center;
-    -ms-background-position-y: bottom;
-    background-position: center bottom;
+  background-size: cover;
+  /* max-height: 300px; */
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+  height: 33rem;
 }
